@@ -46,6 +46,8 @@ npm install
    TWILIO_sid=YOUR_TWILIO_SID
    TWILIO_auth_token=YOUR_TWILIO_AUTH_TOKEN
    TWILIO_phnumber=YOUR_TWILIO_PHONE_NUMBER
+   USER_EMAIL=youremail@email.com
+   GOOGLE_APP_PASSWORD=yourgoogleapppassword
    ```
 
 4. Start the server:
