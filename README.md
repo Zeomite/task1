@@ -26,7 +26,7 @@ Create APIs for
 1. Clone the repository:
 
 ```
-git clone https://github.com/your/repository.git
+git clone https://github.com/Zeomite/task1
 ```
 
 2. Install dependencies:
