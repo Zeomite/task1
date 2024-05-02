@@ -67,7 +67,7 @@ npm start
 1. Sign up using the `/signup` endpoint with a username, email, and password.
 2. Sign in using the `/signin` endpoint with your registered email and password.
 3. If you forget your password, use the `/forgotpass` endpoint to request a reset link via email or phone OTP.
-4. Provide the necessary details to `/updatepassword` along with the OTP received to reset your password.
+4. Provide the necessary details to `/updatepassword` to reset your password.
 
 
 
