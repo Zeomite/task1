@@ -11,12 +11,12 @@ const User = require("./userModel");
 const nodemailer = require("nodemailer");
 
 const transporter = nodemailer.createTransport({
-  host: "smtp.gmail.email",
+  host: "smtp.gmail.com",
   port: 587,
   secure: false, // Use `true` for port 465, `false` for all other ports
   auth: {
-    user: "varunkhanijo14@gmail.com",
-    pass: "khjbtzxnyndnedfq",
+    user: process.env.USER_EMAIL,
+    pass: process.env.GOOGLE_APP_PASSWORD ,
   },
 });
 
@@ -77,13 +77,15 @@ app.post("/forgotpass", async (req, res) => {
           }
           await transporter.sendMail({
             from: '"App Auth" <varunkhanijo14@gmail.com>', // sender address
-            to: email, // list of receivers
+            to: value, // list of receivers
             subject: "Forgot Password", // Subject line
             text: `Your Auth OTP is ${otp}`, // plain text body
           });
         } catch (err) {
-          console.log("Error in sending mail", err.message);
+            console.log("Error in sending otp email", err.message);
+          return res.status(400).json({message:"Error in sending mail"});
         }
+        return res.status(201).json({ message: "OTP Sent successfully!", otp: String(otp) });
       case "phone":
         try {
           const phoneNumber = value;
@@ -123,7 +125,7 @@ app.post("/updatepassword", async (req, res) => {
 });
 
 app.post("/signin", async (req, res) => {
-  const { email, password } = req.body;
+  const { username, email, password } = req.body;
   try {
     const existingUser = await User.findOne({ email: email });
     if (!existingUser) {
