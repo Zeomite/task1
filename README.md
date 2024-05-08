@@ -61,6 +61,9 @@ npm start
 
 ## Endpoints
 
+### WELCOME
+- `GET /`: Welcome message.
+
 ### User Endpoints
 
 - `POST /user/signup`: Register a new user.
