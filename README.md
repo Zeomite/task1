@@ -42,6 +42,9 @@ npm install
    TWILIO_sid=YOUR_TWILIO_SID
    TWILIO_auth_token=YOUR_TWILIO_AUTH_TOKEN
    TWILIO_phnumber=YOUR_TWILIO_PHONE_NUMBER
+   GITHUB_TOKEN = access-token
+   REPO_OWNER = GithubUsername
+   REPO_NAME =  RepoName
    ```
 
 4. Start the server:
@@ -71,7 +74,7 @@ npm start
 2. Sign in using the `/user/signin` endpoint with your registered email and password.
 3. If you forget your password, use the `/user/forgotpass` endpoint to request a reset link via email or phone OTP.
 4. Provide the necessary details to `/user/updatepassword` to reset your password.
-5. Create a new post using the `/post/create` endpoint with a caption and optional image upload.
+5. Create a new post using the `/post/create` endpoint with a caption and optional image upload(uses github repo as image database).
 6. Update an existing post using the `/post/update` endpoint with the post ID, caption, and optional image update.
 7. Delete a post using the `/post/delete` endpoint with the post ID.
 8. Read posts using the `/post/read` endpoint with the post ID or user ID.
