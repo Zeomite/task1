@@ -1,5 +1,5 @@
 
-# Authentication API (TASK1)
+# Authentication API (TASK1 + TASK2)
 
 This API provides authentication functionalities such as user registration, login, password reset, and password update.
 
