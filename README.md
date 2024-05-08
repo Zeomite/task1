@@ -94,7 +94,7 @@ npm start
    - Provide the necessary details to `/user/updatepassword` to reset your password.
 
 2. **Social Media Features:**
-   - Create a new post using the `/post/create` endpoint with a caption and optional image upload.
+   - Create a new post using the `/post/create` endpoint with a caption and optional image upload(Using a github Repo as the Image Database).
    - Update an existing post using the `/post/update` endpoint with the post ID, caption, and optional image update.
    - Delete a post using the `/post/delete` endpoint with the post ID.
    - Read posts using the `/post/read` endpoint with the post ID or user ID.
