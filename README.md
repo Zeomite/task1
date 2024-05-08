@@ -1,7 +1,14 @@
 
-# Authentication and Social Media API
+# Authentication and Social Media API (TASK1 + TASK2)
 
 This API provides authentication functionalities such as user registration, login, password reset, as well as social media features like creating, updating, and deleting posts, liking posts, and commenting on posts.
+
+## Task1 and Task2 Objectives
+- User Registration using Email Password and username
+- User Login using username and password
+- Forget User password API
+- Build CRUD operation for posting social media post.
+- Likes & add a comment to a post API.
 
 ## Requirements
 
