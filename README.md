@@ -28,7 +28,7 @@ This API provides authentication functionalities such as user registration, logi
 1. Clone the repository:
 
 ```
-git clone https://github.com/Zeomite/task1
+git clone https://github.com/Zeomite/task1.git
 ```
 
 2. Install dependencies:
