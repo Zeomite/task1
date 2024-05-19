@@ -5,8 +5,11 @@ const mongoose = require("mongoose");
 const userRouter = require("./routes/userRouter");
 const postRouter = require("./routes/postRouter");
 const commentRouter = require("./routes/commentRouter");
+const passport = require("passport");
+
 
 app.use(express.json());
+app.use(passport.initialize())
 
 
 
