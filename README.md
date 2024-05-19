@@ -1,7 +1,7 @@
 
-# Authentication and Social Media API (TASK1 + TASK2)
+# Authentication and Social Media API (TASK1 + TASK2 + TASK3)
 
-This API provides authentication functionalities such as user registration, login, password reset, as well as social media features like creating, updating, and deleting posts, liking posts, and commenting on posts.
+This API provides authentication functionalities such as user registration, login, password reset, as well as social media features like creating, updating, and deleting posts, liking posts, and commenting on posts with JWT Authentication.
 
 ## Task1 and Task2 Objectives
 - User Registration using Email Password and username
@@ -9,6 +9,8 @@ This API provides authentication functionalities such as user registration, logi
 - Forget User password API
 - Build CRUD operation for posting social media post.
 - Likes & add a comment to a post API.
+- Add Jwt auth token in all apis.
+- Perform data encryption.
 
 ## Requirements
 
@@ -22,6 +24,8 @@ This API provides authentication functionalities such as user registration, logi
 - mongoose
 - axios
 - multer
+- passport
+- passport-jwt
 
 ## Installation
 
@@ -45,6 +49,7 @@ npm install
    ```
    PORT=5000
    MONGO_URL=mongodb://localhost:27017/auth
+   SECRET_KEY=yourjwtsecretkey
    TWILIO_sid=YOUR_TWILIO_SID
    TWILIO_auth_token=YOUR_TWILIO_AUTH_TOKEN
    TWILIO_phnumber=YOUR_TWILIO_PHONE_NUMBER
